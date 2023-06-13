@@ -48,6 +48,7 @@ const CountDown = () => {
                     textAlignVertical="center"
                     onChangeText={(ch) => { setText(ch); setStart(ch * 1 ? ch * 1 : 0) }}
                     placeholder='enter time in seconds'
+                    placeholderTextColor={"black"}
                     style={styles.input} />
                 <View style={styles.btnContainer}>
                     <TouchableOpacity disabled={active || !start} style={styles.btn} onPress={() => { setText(0); setTime(start) }} >
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
     btn: { backgroundColor: "gray", borderRadius: 5, marginLeft: 10, marginTop: 10 },
     btnText: { color: "#FFF", fontSize: 20, padding: 5 },
     time: { fontSize: 50, color: "#FFFFFF", marginTop: 50, marginBottom: 10 },
-    input: { backgroundColor: "#FFFFFF", width: "70%" },
+    input: { backgroundColor: "gray",color:"#FFF", width: "70%" },
 });
 
 

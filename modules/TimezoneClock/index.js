@@ -11,7 +11,7 @@ const TimezoneClock = () => {
   let count = ts
 
   const zones = {
-    "IST": { url: "http://worldtimeapi.org/api/timezone/", tz: "Asia/Kolkata" },
+    "IST": { url: "http://worldtimeapi.org/api/timezon/", tz: "Asia/Kolkata" },
     "PST": { url: "http://worldtimeapi.org/api/timezone/", tz: "America/Los_Angeles" }
   }
 
@@ -27,7 +27,7 @@ const TimezoneClock = () => {
         count = res.data.unixtime
         Timer()
       })
-      .catch((err) => { alert("Something went wrong ! ") })
+      .catch((err) => { alert("UNABLE TO FETCH TIME !") })
   }
 
   const Timer = () => { launch = setInterval(() => { count++; setTs(count) }, 1000) }

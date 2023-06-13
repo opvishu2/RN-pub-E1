@@ -5,10 +5,12 @@ import CountDownsList from './modules/CountDownsList'
 
 const App = () => {
   return (
-    <NativeBaseProvider>
-      <TimezoneClock />
-      {/*<CountDownsList/>*/}
-    </NativeBaseProvider>
+    <>
+      <NativeBaseProvider>
+        <TimezoneClock />
+        {/*<CountDownsList />*/}
+      </NativeBaseProvider>
+    </>
   )
 }
 
